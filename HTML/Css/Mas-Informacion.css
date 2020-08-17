@@ -1,0 +1,101 @@
+
+
+.Titulo {
+    margin: 0;
+    padding: 0;    
+    height: 120px;
+    
+}
+
+.Titulo h1{
+    width: 300px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 70px;
+    background-color: beige; 
+    border-radius: 15px;
+    border: 2px solid #888; 
+    text-align: center; 
+    
+}
+
+
+
+img{
+    height: 600px;
+    width:1400px;        
+}
+
+
+
+.Descripcion-salon{
+    color: black;
+    margin: 0;
+    height: 380px;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 3px grey;
+
+
+}
+
+label{
+    margin: 0;
+    color: black;
+    padding: 10px 10px 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    display: block;
+    margin: 0;
+    font-weight: bold;
+     flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+}
+
+.Ubicacion:hover{
+    cursor: pointer;
+}
+   
+.Contacto {
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    background: grey;
+    font-size:  30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding:7px 7px 7px 7px;
+    display: inline-block;
+}
+
+.Reserva {
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    background: grey;
+    font-size:  30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding:7px 7px 7px 7px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.Reserva:hover{
+    cursor: pointer;
+}
+
+.Contacto:hover{
+    cursor: pointer;
+}
+
+

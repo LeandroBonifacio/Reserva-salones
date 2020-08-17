@@ -1,0 +1,92 @@
+.formulario-carga{
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    background: white;
+    color: black;
+    margin-top: 890px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 3px grey;
+
+}
+.formulario-carga h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.formulario-carga label{
+    margin: 0;
+    font-weight: bold;
+   font-size: 20px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.formulario-carga input[type="text"]{ 
+            border: none;
+            border-bottom: 1px solid #33FFF9;
+            background: transparent;
+            width: 100%;
+            outline: none;
+            height: 40px;
+            color: black;
+            font: 16px;
+            font: 'Roboto';
+            margin-bottom: 5px;
+    
+}
+
+.formulario-carga input[type="time"]{ 
+            border: none;
+            border-bottom: 1px solid #33FFF9;
+            background: transparent;
+            width: 100%;
+            outline: none;
+            height: 40px;
+            color: black;
+            font: 16px;
+            font: 'Roboto';
+            margin-bottom: 5px;
+    
+}
+
+.formulario-carga input[type="submit"]{
+            background: grey;
+            border-radius: 20px;
+            border: 2px solid white;
+            cursor: pointer;
+            font-size: 30px;
+            height: 48px;
+            width: 200px;
+          
+ 
+            font: 'Roboto';
+            margin-top: 20px;
+}
+.formulario-carga #texto{
+    text-align: center;
+    height: 40px;
+    margin-top: 5px;
+    width: 170px;
+    color: white;
+}
+
+
+.Checkbox input[type="checkbox"]{
+    color: red;
+    background: black;
+}
+
+
+
+
+
+
+
+
+

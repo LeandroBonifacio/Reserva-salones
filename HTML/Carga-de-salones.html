@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="fonts/style.css">
+        <link rel="stylesheet" href="Css/Menu.css">
+        <link rel="stylesheet" href="Css/Estilos.css">
+        <link rel="stylesheet" href="Css/Carga-de-salones.css">
+        
+        
+        
+        <title>Registrar salones</title>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
+
+        <style type="text/css">
+
+        .main-section{
+
+            margin: auto auto auto auto;
+
+            padding: 10px;
+
+            margin-top: 15px;
+
+            background-color: #fff;
+
+            box-shadow: 0px 0px 20px #c1c1c1;
+            
+            width: 200px;
+
+        }
+
+        .fileinput-remove,
+
+        .fileinput-upload{
+
+            display: none;
+            
+            background: black;
+
+        }
+
+    </style>
+       
+    </head>
+    
+    
+<body>
+    <header>
+		<div class="contenedor-header">
+			<h1> <span class="icon-star"></span> Salones </h1>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="Index.html"><span class="icon-home"></span>  Inicio</a>
+				<a href="GaleriaSalones.html"><span class="icon-gift"></span>  Salones</a>
+				<a href="Ingresar.html"><span class="icon-user"></span>  Ingresar</a>
+				<a href="Registrarse.html"><span class="icon-add-user"> </span>Registrarse</a> 
+                <a href="Mi-Cuenta.php"><span class="icon-add-user"> </span>Mi cuenta</a>         
+			</nav>
+
+		</div>	
+	</header>
+
+            <form action="registro-salon.php" class="formulario-carga" enctype="multipart/form-data">
+          
+                <h2>Formulario de carga</h2>
+                    
+                    <label for="nombre-salon">Nombre salon:</label>
+                    <input type="text" placeholder="Nombre" required>                    
+
+                    <label for="capacidad">Capacidad:</label>
+                    <input type="text" placeholder="Capacidad" required>
+                
+                    <label for="ubicacion">Ubicacion:</label>
+                    <input type="text" placeholder="Ubicacion" required>  
+                
+                    <label for="horario-apertura">Horario apertura:</label>
+                    <input type="text" placeholder="Horario apertura" > 
+                
+                    <label for="horario-cierre">Horario cierre:</label>
+                    <input type="text" placeholder="Horario cierre" > 
+                    
+                    
+                    <label for="barrio">Barrio:</label>
+                    <input type="text" placeholder="Barrio" required>                    
+                    
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" placeholder="Ciudad" required>
+                
+                <!--<div class="archivo">
+                    <p id="texto">Anadir imagenes del salon:</p>
+                    <input type="file" id="archivo" name="imagen[]" multiple="" placeholder="Imagenes" required>
+                 </div>   
+                <div class="Imagenes-previas">
+                
+                </div>
+                    <label class="label" for="nombre"></label>
+                -->
+                
+                <body class="bg-danger">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 col-11 main-section">
+
+                <h1 class="text-center text-danger">Ingrese sus imagenes:</h1><br>
+
+                    <div class="form-group">
+
+                        <div class="file-loading">
+
+                            <input id="file-1" type="file" name="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+
+    <script type="text/javascript">
+
+        $("#file-1").fileinput({
+
+            theme: 'fa',
+
+            uploadUrl: "/imageUpload.php",
+
+            allowedFileExtensions: ['jpg', 'png', 'gif'],
+
+            overwriteInitial: false,
+
+            maxFileSize:2000,
+
+            maxFilesNum: 10,
+
+            slugCallback: function (filename) {
+
+                return filename.replace('(', '_').replace(']', '_');
+
+            }
+
+        });
+
+    </script>
+
+                   
+                
+                <div class="Dias">
+                    
+                    <h3>Dias disponibles:</h3>
+                
+                    <input type="checkbox" id="lunes" value="lunes" required>
+                    <label for="lunes">Lunes</label>
+                    
+                    <input type="checkbox" id="Martes" value="martes" required>   
+                    <label for="Martes">Martes</label>
+                
+                    <input type="checkbox" id="Miercoles" value="miercoles" required>
+                    <label for="miercoles">Miercoles</label>
+                    
+                    <input type="checkbox" id="Jueves" value="jueves" required>
+                    <label for="jueves">Jueves</label>
+                
+                    <input type="checkbox" id="Viernes" value="viernes" required>
+                    <label for="viernes">Viernes</label>
+                
+                    <input type="checkbox" id="Sabado" value="sabado" required>
+                    <label for="sabado">Sabado</label>
+                
+                    <input type="checkbox" id="Domingo" value="domingo" required>
+                    <label for="domingo">Domingo</label>
+                
+                    </div>
+                
+                    <input type="submit" id="btn-submit" value="Registrarse">
+                
+                   
+            </form>
+    <script src="../Js/main.js">
+    
+    
+    
+    </script>
+     
+ 
+</body>
+</html>

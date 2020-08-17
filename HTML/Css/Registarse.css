@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    background: white;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+	header{
+		width: 100%;
+		height: 50px;
+		background: #333;
+		color: #fff;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100; 
+
+	}
+
+	.contenedor-header{
+		width: 100%;
+		margin: auto; 
+	}
+
+header	h1{
+		float: left;
+        margin-top:5px;
+        
+	}
+
+#menu-bar{
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size: 40px;
+	margin: 6px 0;
+	cursor: pointer;
+}
+
+
+.menu{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgb(51,51,51,0.9);
+	transition: all 0.5s;
+	transform: translateX(100%);
+}
+
+.menu a{
+	display: block;
+	color: #fff;
+	height: 15px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.5)
+}
+
+.menu a:hover{
+	background: rgba(255,255,255,0.3) 
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(70%);
+    
+}
+
+.wrap{
+    width: 90%;
+    padding-top: 5px;
+    max-width: 250px;
+    margin: 0 20px;
+    margin: auto;
+}
+
+#Tipo-de-usuario{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 20px;  
+}
+
+.wrap > div {
+        padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrap input[type="radio"],
+#Formulario-registro-usuario input[type="checkbox"],
+#Formulario-registro-propietario input[type="checkbox"]{
+    display: none;
+}
+
+.wrap .radio label,
+#Formulario-registro-usuario input[type="checkbox"] label,
+#Formulario-registro-propietario input[type="checkbox"] label{
+    color: #0774d9;
+    padding: 5px 15px 5px 51px;
+    background: rgba(0,0,0,.1);
+    position: relative;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.wrap .radio label:hover,
+#Formulario-registro-usuario input[type="checkbox"] label: hover,
+#Formulario-registro-propietario input[type="checkbox"] label: hover
+{
+    background: rgba(0, 116, 217, 0.3);
+}
+
+
+input[type="checkbox"] label: before,
+#Formulario-registro-usuario input[type="checkbox"] label: before,
+#Formulario-registro-propietario input[type="checkbox"] label: before{
+    background: rgba(0, 116, 217, 0.3);
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+   background: none;
+    border: 3px solid #0074d9;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+    display: none;
+}
+
+.wrap .radio label:before, 
+#Formulario-registro-usuario input[type="checkbox"] label: before,
+#Formulario-registro-propietario input[type="checkbox"] label: before{
+    background: rgba(0, 116, 217, 0.3);
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+   background: none;
+    border: 3px solid #0074d9;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+        
+}
+ label:before,
+ label:before{
+    border-radius: 3px;
+}
+
+.wrap input[type="radio"]:checked + label,
+#Formulario-registro-usuario input[type="checkbox"]:checked + label,
+#Formulario-registro-propietario input[type="checkbox"]:checked + label
+{
+    padding: 5px 15px;
+    background: #0074d9;
+    border-radius: 2px;
+    color: white;
+}
+
+.wrap input[type="radio"]:checked + label:before,
+#Formulario-registro-usuario input[type="checkbox"]:checked +label: before,
+#Formulario-registro-propietario input[type="checkbox"]:checked + label:before
+{
+    display: none;
+}
+
+
+#Formulario-registro-usuario,
+#Formulario-registro-propietario
+{
+    color: black;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    transform: translate(-50% , -50);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 0px 0px 3px grey;
+    height: auto;
+    width: 500px;
+    padding: 20px;
+    margin-top: 80px;
+  
+}
+
+#Formulario-registro-usuario h1,
+#Formulario-registro-propietario  h1{
+    margin: 0;
+    padding: 0 0 30px;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+#Formulario-registro-usuario input, 
+#Formulario-registro-propietario input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label{
+    margin: 0;
+    font-weight: bold;
+    display: block;
+    flex-wrap: wrap;
+}
+
+
+ 
+#Formulario-registro-usuario input[type="email"],
+                             input[type="password"],
+                             input[type="text"]{ 
+                    border: none;
+                    border-bottom: 1px solid #33FFF9;
+                    background: transparent;
+                    outline: none;
+                    height: 40px;
+                    font-size: 16px;
+    
+    
+}
+
+
+
+#Formulario-registro-propietario input[type="email"],
+                                input[type="password"],
+                                input[type="text"]{
+                    border: none;
+                    border-bottom: 1px solid #33FFF9;
+                    background: transparent;
+                    outline: none;
+                    height: 40px;
+                    font-size: 16px;
+    
+}
+
+
+ input[type="submit"]{
+        border-radius: 20px;
+        border: none;
+        height: 40px;
+        background: blue;
+        outline: none;
+        color: white;
+    font-size: 20px;
+     margin-top: 20px;
+
+}
+
+.input-group-file{
+    position: relative;
+    margin: 0px;
+    padding: 5px;
+    height: 50px;
+    width: 130px;
+    background-color: #2499e3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px grey; 
+    margin-bottom: 8px;
+
+}
+.input-group-file #texto{
+    text-align: center;
+        height: 50px;
+    margin-top: 5px;
+    width: 130px;
+
+    color: white;
+    
+
+}
+
+.input-group-file #imagenes{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+}
+
+
+

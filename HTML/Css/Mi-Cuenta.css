@@ -1,0 +1,89 @@
+.Cuenta-Propietario{
+    padding: 70px 30px;
+}
+
+
+.Cuenta-Propietario .Salones-propietario,
+.Cuenta-usuario .Reservas{
+    color: black;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    transform: translate(-50% , -50);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 0px 0px 3px grey;
+    height: auto;
+    width: 900px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.Cuenta-Propietario .Salones-propietario img{
+    
+    display: block;
+    width: 100%;
+    height: 80%;
+    
+}
+
+.Agregar-salon{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+
+.Agregar-salon:hover{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+    background:black;
+    transition: 0.5s;
+}
+
+
+.Reservas{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+
+.Reservas:hover{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+    background:black;
+    transition: 0.5s;
+}
+
+.Cuenta-Propietario input[type="submit"]{
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 40px;
+    width: 100px;
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+.Cuenta-Propietario input[type="submit"]:hover{
+
+    cursor: pointer;
+
+}

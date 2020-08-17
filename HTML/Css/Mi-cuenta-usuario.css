@@ -1,0 +1,96 @@
+
+
+.Cuenta-usuario{
+  
+    top: 30px;
+    position:absolute;
+}
+
+.Cuenta-usuario h2{
+    padding: 5px;
+}
+
+table{
+    position: absolute;
+    top: 10%; left: 10%;
+	width: 80%; 
+	border: 1px solid ;
+	text-align: center;
+}
+
+.Cuenta-usuario .Reservas{
+    /*color: black;
+    max-width: 1000px;
+    position: relative;
+    
+    
+    
+    height: 190px;
+    width: 700px;*/
+
+    margin-top: 50px;
+    
+    
+        position: relative;
+		/*nos posicionamos en el centro del navegador*/
+		top:50%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:800px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-400px;
+		/*determinamos una altura*/
+		height:230px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+
+		border:1px solid #808080;
+        box-shadow: 0px 0px 3px grey;
+        box-sizing: border-box;
+		padding: 5px;
+}
+
+
+.Cuenta-usuario .icon-home{
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.Cuenta-usuario .icon-home:hover{
+    cursor: pointer;
+
+}
+
+.Cuenta-usuario label{
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    display: block;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 12px;
+    }
+
+#Reservas{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+
+#Reservas:hover{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+    background:black;
+    transition: 0.5s;
+}
